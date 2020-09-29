@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 450px;
+    background-image: url("img/geles.jpg");
+}
+a{
+    padding: 10px;
+    background-color: green;
+    transition: transform .2s; /* Animation */
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+}
+a:hover {
+    transform: scale(1.5); /* (150% zoom)*/
+}
