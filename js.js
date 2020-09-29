@@ -12,10 +12,15 @@
 // 12 new season looks
 // 13
 console.log("labas");
-const button= document.getElementById('button')
-button.addEventListener('click', getRandom)
+const mygtukas= document.getElementById('mygtukas');
+mygtukas.addEventListener('click', gaukSkaiciu);
 
-function getRandom() {
-    console.log("funkcijos vidus");
-    return Math.floor(Math.random() * 10) + 1;
-}
+function gaukSkaiciu() {
+    console.log('funkcijos vidus');
+    var skaicius =  Math.floor(Math.random() * 10) + 1;
+    const vieta = document.getElementById('taskNr');
+    vieta.textContent = skaicius;
+
+};
+
+
