@@ -4,7 +4,9 @@
 }
 .container{
     height: 450px;
-    background-image: url("img/geles.jpg");
+    background-image: url("img/ft.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 a{
     padding: 5px;

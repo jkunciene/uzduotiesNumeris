@@ -26,11 +26,14 @@ function gaukSkaiciu() {
    for(let i=0; i<reiksme; i++){
         const eilute = document.createElement('tr');
         vietaPrintinimui.appendChild(eilute);
-        console.log('labas');
+
         const stulpelis1 = document.createElement('td');
         let skaicius =  Math.floor(Math.random() * 10) + 1;
         stulpelis1.textContent = skaicius;
         eilute.appendChild(stulpelis1);
+        const stulpelis2 = document.createElement('input');
+        eilute.appendChild(stulpelis2);
+
 
     }
 
