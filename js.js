@@ -20,16 +20,22 @@ function gaukSkaiciu() {
     console.log('funkcijos vidus');
     const lentele = document.getElementById('slepti');
     lentele.style.display = "block";
-
     const reiksme= parseInt(document.getElementById('kiekis').value)
     console.log(reiksme);
+    let skaicius=[];
    for(let i=0; i<reiksme; i++){
+        let tinka=true;
         const eilute = document.createElement('tr');
         vietaPrintinimui.appendChild(eilute);
-
         const stulpelis1 = document.createElement('td');
-        let skaicius =  Math.floor(Math.random() * 10) + 1;
-        stulpelis1.textContent = skaicius;
+        while(tinka){
+            let rand=Math.floor(Math.random() * 10) + 1;
+             if(skaicius.indexOf(rand) === -1) {
+                 skaicius.push(rand);
+                 tinka=false;
+             }
+         }
+        stulpelis1.textContent = skaicius[i];
         eilute.appendChild(stulpelis1);
         const stulpelis2 = document.createElement('input');
         eilute.appendChild(stulpelis2);
