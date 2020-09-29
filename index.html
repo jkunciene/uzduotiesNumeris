@@ -12,25 +12,30 @@
 </head>
 <body>
 <div class="container">
-    <div class="row mt-5">
-        <div class="col-6 text-right">
-            <label>Vardas</label>
-        </div>
-        <div class="col-6">
-            <input id="vardas" placeholder="insert name" type="text">
+    <div class="row">
+        <div class="col ">
+            <table class="table" id="slepti">
+                <thead>
+                <tr>
+                    <th scope="col">vardas</th>
+                    <th scope="col">užduoties numeris</th>
+                </tr>
+                </thead>
+                <tbody id="kur">
+
+                </tbody>
+            </table>
         </div>
     </div>
-    <div class="row">
-        <div class="col-6 text-right">
-            <label>Your task is...</label>
-        </div>
-        <div class="col-6">
-            <div id="taskNr" ></div>
+
+    <div class="row text-center">
+        <div class="col p-3">
+            <input id="kiekis" placeholder="kiek mokiniu?" type="number">
         </div>
     </div>
     <div class="row text-center">
         <div class="col p-3">
-            <a id="mygtukas" type="button" class="btn btn-outline-success hoverable">Enter</a>
+            <a id="mygtukas" type="button" class="btn btn-outline-success hoverable">Sužinok savo užduotį</a>
         </div>
     </div>
 

@@ -10,10 +10,13 @@ a{
     padding: 5px;
     background-color: green;
     transition: transform .2s; /* Animation */
-    width: 150px;
-    height: 30px;
+    width: 200px;
+    height: 40px;
     margin: 0 auto;
 }
 a:hover {
     transform: scale(1.5); /* (150% zoom)*/
+}
+.table{
+    display: none;
 }
