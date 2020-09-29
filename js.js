@@ -11,6 +11,11 @@
 // 11 the band
 // 12 new season looks
 // 13
-
+console.log("labas");
 const button= document.getElementById('button')
-button.addEventListener('click', rask)
+button.addEventListener('click', getRandom)
+
+function getRandom() {
+    console.log("funkcijos vidus");
+    return Math.floor(Math.random() * 10) + 1;
+}
